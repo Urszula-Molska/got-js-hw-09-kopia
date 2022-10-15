@@ -1,6 +1,6 @@
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+/*import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
+//import 'flatpickr/dist/flatpickr.min.css';
 startBtn = document.querySelector('button[data-start]');
 
 const datetimeInput = document.getElementById('datetime-picker');
@@ -75,4 +75,4 @@ function addLeadingZero(value) {
   if (value.toString().length < 2) {
     return value.toString().padStart(2, '0');
   } else return value;
-}
+}*/
