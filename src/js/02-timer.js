@@ -15,7 +15,8 @@ const secondsLeft = document.querySelector('span[data-seconds]');
 
 let inputMs;
 startBtn.disabled = true;
-const flatpickr = flatpickr('#datetime-picker', {
+
+const options = {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
@@ -28,9 +29,9 @@ const flatpickr = flatpickr('#datetime-picker', {
       startBtn.disabled = false;
     }
   },
-});
+};
 
-const options = {};
+const fp = flatpickr('#datetime-picker', options);
 
 startBtn.addEventListener('click', () => {
   timerId = setInterval(() => {
